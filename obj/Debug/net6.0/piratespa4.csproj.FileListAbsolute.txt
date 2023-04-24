@@ -3,3 +3,13 @@ C:\Users\willt\Desktop\School Stuff\MIS 321\piratespa4\obj\Debug\net6.0\piratesp
 C:\Users\willt\Desktop\School Stuff\MIS 321\piratespa4\obj\Debug\net6.0\piratespa4.AssemblyInfoInputs.cache
 C:\Users\willt\Desktop\School Stuff\MIS 321\piratespa4\obj\Debug\net6.0\piratespa4.AssemblyInfo.cs
 C:\Users\willt\Desktop\School Stuff\MIS 321\piratespa4\obj\Debug\net6.0\piratespa4.csproj.CoreCompileInputs.cache
+C:\Users\willt\Desktop\School Stuff\MIS 321\piratespa4\bin\Debug\net6.0\piratespa4.exe
+C:\Users\willt\Desktop\School Stuff\MIS 321\piratespa4\bin\Debug\net6.0\piratespa4.deps.json
+C:\Users\willt\Desktop\School Stuff\MIS 321\piratespa4\bin\Debug\net6.0\piratespa4.runtimeconfig.json
+C:\Users\willt\Desktop\School Stuff\MIS 321\piratespa4\bin\Debug\net6.0\piratespa4.dll
+C:\Users\willt\Desktop\School Stuff\MIS 321\piratespa4\bin\Debug\net6.0\piratespa4.pdb
+C:\Users\willt\Desktop\School Stuff\MIS 321\piratespa4\obj\Debug\net6.0\piratespa4.dll
+C:\Users\willt\Desktop\School Stuff\MIS 321\piratespa4\obj\Debug\net6.0\refint\piratespa4.dll
+C:\Users\willt\Desktop\School Stuff\MIS 321\piratespa4\obj\Debug\net6.0\piratespa4.pdb
+C:\Users\willt\Desktop\School Stuff\MIS 321\piratespa4\obj\Debug\net6.0\piratespa4.genruntimeconfig.cache
+C:\Users\willt\Desktop\School Stuff\MIS 321\piratespa4\obj\Debug\net6.0\ref\piratespa4.dll
