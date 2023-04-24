@@ -1,0 +1,5 @@
+C:\Users\willt\Desktop\School Stuff\MIS 321\piratespa4\obj\Debug\net6.0\piratespa4.csproj.AssemblyReference.cache
+C:\Users\willt\Desktop\School Stuff\MIS 321\piratespa4\obj\Debug\net6.0\piratespa4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\willt\Desktop\School Stuff\MIS 321\piratespa4\obj\Debug\net6.0\piratespa4.AssemblyInfoInputs.cache
+C:\Users\willt\Desktop\School Stuff\MIS 321\piratespa4\obj\Debug\net6.0\piratespa4.AssemblyInfo.cs
+C:\Users\willt\Desktop\School Stuff\MIS 321\piratespa4\obj\Debug\net6.0\piratespa4.csproj.CoreCompileInputs.cache
