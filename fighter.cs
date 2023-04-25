@@ -7,10 +7,11 @@ namespace piratespa4
         public int attackStrength {get; set;}
         public bool isDebuffed {get; set;}
         public int defensivePower {get; set;}
-        public void AttackTurn()
+        public int fighterType {get; set;}
+        public virtual void AttackTurn()
         {
             int damage = 12;
-            System.Console.WriteLine($"you did {damage} damage");
+            System.Console.WriteLine($"you did {damage} damage.");
         }
     }
 }

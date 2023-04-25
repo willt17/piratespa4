@@ -1,11 +1,11 @@
 namespace piratespa4
 {
-    public class WTurner : fighter
+    public class DJones : fighter
     {
-        override public void  AttackTurn()
+        override public void AttackTurn()
         {
             int damage = this.attackStrength;
-            System.Console.WriteLine("Sword slash");
+            System.Console.WriteLine("Cannon fire");
             System.Console.WriteLine($"you did {damage} damage.");
         }
     }
