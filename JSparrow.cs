@@ -4,9 +4,12 @@ namespace piratespa4
     {
         override public void AttackTurn()
         {
-            int damage = this.attackStrength;
             System.Console.WriteLine("Distract opponent");
-            System.Console.WriteLine($"you did {damage} damage.");
+        }
+        public override string ToString()
+        {
+            string nameString = "Jack Sparrow";
+            return nameString;
         }
     }
 }

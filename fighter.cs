@@ -4,10 +4,11 @@ namespace piratespa4
     public class fighter : iattack
     {
         public int health {get; set;}
-        public int attackStrength {get; set;}
+        public int maxPower {get; set;}
         public bool isDebuffed {get; set;}
-        public int defensivePower {get; set;}
-        public int fighterType {get; set;}
+        public string playerName {get; set;}
+        public virtual int fighterType {get; set;} = -1;
+        public virtual int naturalEnemy {get; set;} = -1;
         public virtual void AttackTurn()
         {
             int damage = 12;
