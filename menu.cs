@@ -9,8 +9,8 @@ namespace piratespa4
             Console.Clear();
             System.Console.WriteLine("1. Choose your character");
             System.Console.WriteLine("2. Choose your opponent");
-            System.Console.WriteLine("3. Fight");
-            System.Console.WriteLine("4. View leaderboard");
+            System.Console.WriteLine("3. Player fight");
+            System.Console.WriteLine("4. Computer fight");
             System.Console.WriteLine("5. Test fighters");
             System.Console.WriteLine("6. Exit");
         }

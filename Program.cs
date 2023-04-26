@@ -34,15 +34,21 @@ void RouteEm(string userInput)
                 // player2.AttackTurn(); testing delete
                 break;
         case "3":
-                if(player1.pSelected == true && player2.pSelected == true)
-                {
-                    NewGame();
-                }
-                else
-                {
-                    System.Console.WriteLine("You need to select both characters");
-                }
+            if(player1.pSelected == true && player2.pSelected == true)
+            {
+                NewGame();
+            }
+            else
+            {
+                System.Console.WriteLine("You need to select both characters");
+            }
+            break;
+        case "4":
+            {
+                System.Console.WriteLine("You're about to play against the computer.");
+                ComputerFight();
                 break;
+            }
         case "5":
                 player1.AttackTurn();
                 player2.AttackTurn();
@@ -174,5 +180,63 @@ void CheckOffsets(fighter f1, fighter f2)
     else
     {
         System.Console.WriteLine(" ");
+    }
+}
+    void ComputerFight()
+    {
+        System.Console.WriteLine($"your fighter is {player1.ToString()} with a health of {player1.health} and your opponent is {player2.ToString()} with a health of {player2.health}");
+        CheckOffsets(player1, player2);
+        while(player1.health > 0 && player2.health > 0)
+        {
+            System.Console.WriteLine("Press 1 to begin your attack.");
+            userInput = Console.ReadLine();
+            AttackCheck();
+            System.Console.WriteLine("Now it's the computers turn to attack");
+            int damageTotal = DoDamage(player2, player1);
+            if(damageTotal > 0)
+            {
+                player1.health = (player1.health - damageTotal);
+                System.Console.WriteLine($"They hit you for {damageTotal}, Your current health is {player1.health}");
+            }
+            else
+            {
+                System.Console.WriteLine("Their atack missed.");
+            }
+        }
+    }
+void AttackCheck()
+{
+    int defendChance = rand.Next(0,101);
+    if(defendChance >= 50)
+    {
+        int damage = DoDamage(player1, player2);
+        if(damage > 0)
+        {
+            int currHealth = (player2.health - damage);
+            player2.health = currHealth;
+            System.Console.WriteLine("The opponent defended.");
+            System.Console.WriteLine($"You hit them for {damage} damage and they have {player2.health} health remaining.");
+        }
+        else
+        {
+            System.Console.WriteLine("Your attack missed them.");
+        }
+    }
+    else
+    {
+        int damage = rand.Next(0,player1.maxPower);
+        if(player2.isDebuffed == true)
+        {
+            int trueDamage = Convert.ToInt32(damage * 1.2);
+            int currHealth = (player2.health - trueDamage);
+            player2.health = currHealth;
+            System.Console.WriteLine($"You hit them for {trueDamage} and their remaining health is {player2.health}");
+        }
+        else
+        {
+            int currHealth = (player2.health - damage);
+            player2.health = currHealth;
+            System.Console.WriteLine($"You hit them for {damage} and their remaining health is {player2.health}");
+        }
     }
 }
