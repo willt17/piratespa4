@@ -45,14 +45,23 @@ void RouteEm(string userInput)
             break;
         case "4":
             {
-                System.Console.WriteLine("You're about to play against the computer.");
-                ComputerFight();
+                if(player1.pSelected == true && player2.pSelected == true)
+                {
+                    System.Console.WriteLine("You're about to play against the computer.");
+                    player2.playerName = "Computer Player";
+                    ComputerFight();
+                }
+                else
+                {
+                    System.Console.WriteLine("You need to select both characters.");
+                }
                 break;
             }
         case "5":
-                player1.AttackTurn();
-                player2.AttackTurn();
+            {
+                menu.Help();
                 break;
+            }
         default:
             {
                 System.Console.WriteLine("bad entry");
@@ -130,6 +139,7 @@ void GameTurn()
     {
         System.Console.WriteLine("your attack missed");
     }
+    EndStateCheck(player1, player2);
     System.Console.WriteLine($"{player2.playerName} will go next");
     System.Console.WriteLine("press any key to attack");
     Console.ReadKey();
@@ -143,6 +153,7 @@ void GameTurn()
     {
         System.Console.WriteLine("Your atack missed.");
     }
+    EndStateCheck(player1, player2);
 }
 int DoDamage(fighter aggressor, fighter defender) // should check for damage offsets between the characters
 {
@@ -191,6 +202,7 @@ void CheckOffsets(fighter f1, fighter f2)
             System.Console.WriteLine("Press 1 to begin your attack.");
             userInput = Console.ReadLine();
             AttackCheck();
+            EndStateCheck(player1, player2);
             System.Console.WriteLine("Now it's the computers turn to attack");
             int damageTotal = DoDamage(player2, player1);
             if(damageTotal > 0)
@@ -202,6 +214,7 @@ void CheckOffsets(fighter f1, fighter f2)
             {
                 System.Console.WriteLine("Their atack missed.");
             }
+            EndStateCheck(player1,player2);
         }
     }
 void AttackCheck()
@@ -238,5 +251,20 @@ void AttackCheck()
             player2.health = currHealth;
             System.Console.WriteLine($"You hit them for {damage} and their remaining health is {player2.health}");
         }
+    }
+}
+void EndStateCheck(fighter f1, fighter f2)
+{
+    if(f1.health < 1)
+    {
+        System.Console.WriteLine($"{f2.playerName} Wins with a remaining health of {f2.health}");
+    }
+    else if(f2.health < 1)
+    {
+        System.Console.WriteLine($"{f1.playerName} wins with a remaining health of {f1.health}");
+    }
+    else
+    {
+        System.Console.WriteLine(" ");
     }
 }
