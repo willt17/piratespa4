@@ -81,6 +81,13 @@ fighter FighterSelect()
                 // player1.AttackTurn(); testing delete
                 return newFighter;
             }
+        case "4":
+            {
+                int startPower = rand.Next(0,101);
+                fighter newFighter = new ESwann(){health=100, maxPower=startPower, isDebuffed=false, fighterType=4, naturalEnemy=2};
+                // player1.AttackTurn(); testing delete
+                return newFighter;
+            }
         default:
             {
                 System.Console.WriteLine("bad entry");

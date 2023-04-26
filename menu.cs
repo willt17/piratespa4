@@ -28,6 +28,7 @@ namespace piratespa4
             System.Console.WriteLine("1. Will Turner");
             System.Console.WriteLine("2. Davy Jones");
             System.Console.WriteLine("3. Jack Sparrow");
+            System.Console.WriteLine("4. Elizabeth Swann");
         }
         public string GetFighterMenuChoice()
         {
