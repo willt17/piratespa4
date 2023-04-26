@@ -47,6 +47,8 @@ namespace piratespa4
         {
             System.Console.WriteLine("In the first menu selection you choose player 1's fighter.");
             System.Console.WriteLine("in the second menu selesction you choose player 2's fighter.");
+            System.Console.WriteLine("Keep in mind when selecting your characters that every fighter has a natural enemy that does 20 percent more damage to them on each hit.");
+            System.Console.WriteLine("For Will Turner this is Jack Sparrow, Davy Jones is Will Turner, Jack Sparrows is Davy Jones, and Elizabeth Swanns is Davy Jones as well.");
             System.Console.WriteLine("The third menu option is for the standard game mode,");
             System.Console.WriteLine("In this game mode player 1 squares off with player 2 in alternating turns.");
             System.Console.WriteLine("The third menu choice is for the computer fight mode,");
