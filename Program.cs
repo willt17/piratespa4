@@ -22,6 +22,7 @@ void RouteEm(string userInput)
                 player1 = FighterSelect();
                 System.Console.WriteLine("Enter your name and press enter.");
                 player1.playerName = Console.ReadLine();
+                player1.pSelected = true;
                 // player1.AttackTurn(); testing delete
                 break;
             }
@@ -29,10 +30,18 @@ void RouteEm(string userInput)
                 player2 = FighterSelect();
                 System.Console.WriteLine("Enter your name and press enter");
                 player2.playerName = Console.ReadLine();
+                player2.pSelected = true;
                 // player2.AttackTurn(); testing delete
                 break;
         case "3":
-                NewGame(); // need to add error checking to make sure they selected fighters.
+                if(player1.pSelected == true && player2.pSelected == true)
+                {
+                    NewGame();
+                }
+                else
+                {
+                    System.Console.WriteLine("You need to select both characters");
+                }
                 break;
         case "5":
                 player1.AttackTurn();

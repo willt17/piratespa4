@@ -9,6 +9,7 @@ namespace piratespa4
         public string playerName {get; set;}
         public virtual int fighterType {get; set;} = -1;
         public virtual int naturalEnemy {get; set;} = -1;
+        public bool pSelected {get; set;} = false;
         public virtual void AttackTurn()
         {
             int damage = 12;
