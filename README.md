@@ -1,1 +1,2 @@
 # piratespa4
+Here is my project for PA4. my current extras are an additional fighter Elizabeth Swann, A mode to play against an ai opponent, and an added help menu to explain the rules. Sorry it is late.
